@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollof Rice</title>
+    <style>
+        h1{
+            color:rgb(36, 36, 224);
+            border: 1px solid rgb(12, 125, 88);
+            border-radius: 20px;
+            margin: 30px auto;
+            padding: 20px 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 45px;
+            max-width: 50%;
+            
+        }
+
+        h2{
+            color:rgb(51, 51, 202);
+            text-align: center;
+            padding: 5px 10px;
+
+        }
+
+        h4{
+            color: blue;
+            text-decoration: underline;
+            font-size: small;
+
+        }
+
+        img{
+            width: 500px;
+            display: block;
+            margin: 0 auto;
+            padding-left: 20px 30px;
+            border-radius: 60px;
+            max-width: 100%;
+        }
+
+        p{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        .defineNaija{
+            text-align: left;
+            text-decoration: underline;
+            color: rgb(46, 46, 155);
+            font-size:x-large;
+        }
+        .initialJollof{
+            color: rgb(51, 51, 202);
+        }
+        em{
+            color: rgb(119, 119, 202);
+        }
+
+        button{
+            margin: 0 auto;
+            padding: 20px 15px;
+            background: aquamarine;
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: larger;
+            display: block;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            background: blueviolet;
+            color: aquamarine;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+
+        div{
+            background: linear-gradient(to bottom, rgba(245, 192, 203, 0.8), rgba(249, 236, 236, 0.8));
+            border: 1px thin white;
+            display: block;
+            margin: 100px 100px;
+            padding: 20px 30px;
+            border-radius: 60px;
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1>
+        I love Jollof Rice
+    </h1>
+
+    <h2>
+        Especially Naija Jollof
+    </h2>
+
+    <hr>
+
+    <img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/918/original/NaijaJollof.PNG?1676071201"/>;
+
+    <hr>
+
+    <p>
+        <strong class = "initialJollof">Jollof Rice</strong> is a rice dish from West Africa. The dish is typically made with <em>long-grain rice, tomatoes, onions, spices, vegetables</em>
+        and <em>meat</em> in a single pot, although its ingredients and preparation methods vary across different regions.
+        The origins of jollof rice can be traced to the <em>Senegambian region</em> that was ruled by the <em>Wolof or Jolof Empire</em> in the
+        14th century, spanning parts of today's <em>Senegal, The Gambia</em> and <em>Mauritania</em>, where rice was grown. The dish has its roots
+        in a traditional dish called <em>thieboudienne</em>, containing rice, fish, shellfish and vegetables.
+        
+        <p class = "defineNaija">
+            <strong>Nigerian Jollof</strong>
+        </p>
+        <p>Although considerable variation exists, the basic profile for Nigerian jollof rice includes long-grain parboiled rice,
+        tomatoes and tomato paste, pepper, vegetable oil, onions, and stock cubes. Most of the ingredients are cooked in one
+        pot, of which a rich meat stock and a fried tomato and pepper puree characteristically forms the base. Rice is then
+        added and left to cook in the liquid. The dish is then served with the protein of choice and very often with fried
+        plantains, moi moi, steamed vegetables, coleslaw, salad, etc. In the riverine areas of Nigeria where seafood is the
+        main source of protein, seafood often takes the place of chicken or meat as the protein of choice.
+    </p>
+    </p>
+    <h4>
+     <a href="https://en.wikipedia.org/wiki/Jollof_rice" target="_blank">
+        Read more on Wikepedia
+     </a>
+    </h4>
+
+    <button>
+        Try Naija Jollof
+    </button>
+    </div>
+    
+    <script>
+
+        function buyJollof(){
+            let spiceTolerance = prompt("Do you like spicy meals?");
+            if (spiceTolerance === "Yes" || spiceTolerance === "yes") {
+                prompt("What city do you live in?");
+
+                alert ("Great! There is a Jollof Hut near you!");
+            } else {
+                alert("The African dish may not be tollerable for you. Please try the less spicy variant.")
+            }
+        }
+        let buttonJollof = document.querySelector("button");
+        buttonJollof.addEventListener("click", buyJollof);
+    </script>
+</body>
+</html>
