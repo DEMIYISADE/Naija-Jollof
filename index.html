@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lobster+Two&family=Pacifico&family=Schibsted+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <meta name="description" content="Bidemi Olayisade is a Front-end developer and Implementation Manager with over 10 years experiance in Financial Technology and payments innovation">
     <title>Jollof Rice</title>
     <style>
         h1{
@@ -16,6 +20,7 @@
             font-weight: bold;
             font-size: 45px;
             max-width: 50%;
+            font-family: 'Fira Sans Condensed', sans-serif;
             
         }
 
@@ -23,6 +28,7 @@
             color:rgb(51, 51, 202);
             text-align: center;
             padding: 5px 10px;
+            font-family: 'Lobster Two', cursive;
 
         }
 
@@ -30,6 +36,7 @@
             color: blue;
             text-decoration: underline;
             font-size: small;
+            font-family: 'Fira Sans Condensed', sans-serif;
 
         }
 
@@ -44,8 +51,9 @@
 
         p{
             text-align: center;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Lobster Two', cursive;
             font-size: 20px;
+            line-height: 1.5em;
         }
 
         .defineNaija{
@@ -78,6 +86,7 @@
             color: aquamarine;
             cursor: pointer;
             transition: all 200ms ease-in-out;
+            font-family: 'Fira Sans Condensed', sans-serif;
         }
 
         div{
@@ -104,7 +113,7 @@
 
     <hr>
 
-    <img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/918/original/NaijaJollof.PNG?1676071201"/>;
+    <img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/918/original/NaijaJollof.PNG?1676071201" alt="Image of a plate of Jollof Rice"/>;
 
     <hr>
 
@@ -127,30 +136,14 @@
     </p>
     </p>
     <h4>
-     <a href="https://en.wikipedia.org/wiki/Jollof_rice" target="_blank">
+     <a href="https://en.wikipedia.org/wiki/Jollof_rice" title="Link to place an Order for Naija Jollof_rice">
         Read more on Wikepedia
-     </a>
-    </h4>
+    </a>
+</h4>
 
-    <button>
+    <button onclick="window.location.href=`https://firewoodjollofng.com/`;">
         Try Naija Jollof
     </button>
     </div>
-    
-    <script>
-
-        function buyJollof(){
-            let spiceTolerance = prompt("Do you like spicy meals?");
-            if (spiceTolerance === "Yes" || spiceTolerance === "yes") {
-                prompt("What city do you live in?");
-
-                alert ("Great! There is a Jollof Hut near you!");
-            } else {
-                alert("The African dish may not be tollerable for you. Please try the less spicy variant.")
-            }
-        }
-        let buttonJollof = document.querySelector("button");
-        buttonJollof.addEventListener("click", buyJollof);
-    </script>
 </body>
 </html>
